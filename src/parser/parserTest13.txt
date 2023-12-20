@@ -1,0 +1,14 @@
+VAR
+countUp: integer;
+count, max: integer;
+x: integer;
+
+PROCEDURE countUp(count, max);
+   IF count <= max THEN
+   BEGIN
+    	WRITELN(count);
+     	countUp := countUp(count + 1, max);
+   END;
+   
+x := countUp(2, 4);		// 2, 3, 4
+.

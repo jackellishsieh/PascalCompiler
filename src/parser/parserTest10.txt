@@ -1,0 +1,18 @@
+VAR
+foo, bar: integer;
+f, d: integer;
+
+ignore: integer;
+
+PROCEDURE foo(d);
+   ignore := bar(d + f);
+   
+PROCEDURE bar(f);
+   WRITELN(f);
+
+BEGIN
+	f := 2;
+   	ignore := foo(3);		// 5
+   	WRITELN(f);				// 2
+END;
+.

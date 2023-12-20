@@ -1,0 +1,15 @@
+VAR
+print: integer;
+n: integer;
+ignore: integer;
+
+
+PROCEDURE print(n);
+	WRITELN(n);
+
+BEGIN
+	n := 3;
+   	ignore := print(5);		// 5
+   	WRITELN(n);				// 3
+END;
+.

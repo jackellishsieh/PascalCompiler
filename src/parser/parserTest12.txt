@@ -1,0 +1,14 @@
+VAR
+printSquare: integer;
+n: integer;
+x: integer;
+ignore: integer;
+
+PROCEDURE printSquare(n);
+	WRITELN(n * n);
+
+BEGIN
+	x := 1;
+    ignore := printSquare(x + 2);	// 9
+END;
+.

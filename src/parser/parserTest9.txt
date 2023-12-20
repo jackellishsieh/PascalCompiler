@@ -1,0 +1,25 @@
+VAR count, ignore, times, low, high, printSquares, square : integer;
+   
+PROCEDURE printSquares(low, high);	
+	LOCAL count, square;
+	
+	BEGIN	 
+    	count := low;
+     	WHILE count <= high DO
+    	 BEGIN
+    	 	square := count * count;
+    	    WRITELN(square);
+     	   count := count + 1;
+     	   times := times + 1;
+		END;
+	END;
+	
+
+BEGIN
+	count := 196;
+	times := 0;
+    ignore := printSquares(10, 13);
+    WRITELN(count);
+    WRITELN(times);
+END;
+.
