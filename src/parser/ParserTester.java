@@ -74,7 +74,7 @@ public class ParserTester
         
         /*
          * Sets outputFilename to default if none is provided
-         * Otherwise, use first argument of main
+         * Otherwise, use second argument of main
          */
         String outputFilename;
         
